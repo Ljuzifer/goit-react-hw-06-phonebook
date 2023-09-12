@@ -6,7 +6,7 @@ import { FormThumb } from './ContactForm.styled';
 const formSchema = Yup.object().shape({
   name: Yup.string()
     .matches(
-      /^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/,
+      /^[a-zA-Za-яА-Я]+(([' -][a-zA-Za-яА-Я ])?[a-zA-Za-яА-Я]*)*$/,
       'Wrong name format'
     )
     .required('Must be filled'),
