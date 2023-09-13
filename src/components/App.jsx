@@ -6,25 +6,10 @@ import { Filter } from './Filter/Filter';
 import { Message } from './Message/Message';
 import { GlobalStyle, Box } from './GlobalStyle';
 
-// const LOCAL_STORAGE_KEY = 'contacts-list';
 
-// const updateFromLocalStorage = () => {
-//   const savedContacts = localStorage.getItem(LOCAL_STORAGE_KEY);
-//   const parsedContacts = JSON.parse(savedContacts);
-
-//   if (parsedContacts !== null) {
-//     return parsedContacts;
-//   }
-//   return [];
-// };
 
 export const App = () => {
   const contacts = useSelector(getContacts);
-
-  // useEffect(() => {
-  //   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts));
-  // }, [contacts]);
-
   const contactsLength = contacts.length;
 
   return (
