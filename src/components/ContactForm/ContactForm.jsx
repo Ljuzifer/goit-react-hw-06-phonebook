@@ -2,6 +2,9 @@ import { Formik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { nanoid } from 'nanoid';
 import { FormThumb } from './ContactForm.styled';
+import { useDispatch, useSelector } from 'react-redux';
+import { addContact } from 'redux/actions';
+import { getContacts } from 'redux/selectors';
 
 const formSchema = Yup.object().shape({
   name: Yup.string()
@@ -18,7 +21,26 @@ const formSchema = Yup.object().shape({
     .required('Must be filled'),
 });
 
-export const ContactForm = ({ onAddContact }) => {
+export const ContactForm = () => {
+  const dispatch = useDispatch();
+  const contacts = useSelector(getContacts);
+  const onAddContact = newContact => {
+    // newContact.preventDefault();
+    const enteredName = newContact.name;
+
+    if (
+      contacts.some(
+        contact => contact.name.toLowerCase() === enteredName.toLowerCase()
+      )
+    ) {
+      alert(`${enteredName} is already in contacts.`);
+      return;
+    }
+
+    dispatch(addContact(newContact));
+    // setContacts(prev => [...prev, newContact]);
+  };
+
   return (
     <Formik
       initialValues={{
