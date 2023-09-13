@@ -1,10 +1,11 @@
 import { Formik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { nanoid } from 'nanoid';
-import { FormThumb } from './ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/actions';
+// import { addContact } from 'redux/actions';
 import { getContacts } from 'redux/selectors';
+import { addContact } from 'redux/contactsSlice';
+import { FormThumb } from './ContactForm.styled';
 
 const formSchema = Yup.object().shape({
   name: Yup.string()

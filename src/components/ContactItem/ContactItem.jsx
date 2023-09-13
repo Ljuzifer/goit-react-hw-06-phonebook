@@ -1,7 +1,7 @@
 import { HiMicrophone } from 'react-icons/hi';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from 'redux/actions';
-// import { getContacts } from 'redux/selectors';
+import { deleteContact } from 'redux/contactsSlice';
+// import { deleteContact } from 'redux/actions';
 
 export const ContactItem = ({ contact }) => {
   // const contacts = useSelector(getContacts);
