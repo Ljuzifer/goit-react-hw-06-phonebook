@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { getContacts } from 'redux/selectors';
 import { ContactForm } from './ContactForm/ContactForm';
@@ -21,7 +21,7 @@ import { Message } from './Message/Message';
 
 export const App = () => {
   // const [contacts, setContacts] = useState(updateFromLocalStorage);
-  const [filter, setFilter] = useState('');
+  // const [filter, setFilter] = useState('');
 
   const contacts = useSelector(getContacts);
 
@@ -40,9 +40,9 @@ export const App = () => {
   //   setContacts(prev => [...prev, newContact]);
   // };
 
-  const handleChangeFilter = newSymbol => {
-    setFilter(newSymbol);
-  };
+  // const handleChangeFilter = newSymbol => {
+  //   setFilter(newSymbol);
+  // };
 
   // const handleContactDelete = contactId => {
   //   setContacts(contacts.filter(contact => contact.id !== contactId));
@@ -66,7 +66,7 @@ export const App = () => {
       <ContactForm />
 
       <h2>Contacts</h2>
-      <Filter nameFilter={filter} onChange={handleChangeFilter} />
+      <Filter />
       {contactsLength === 0 ? (
         <Message message="Oops! Contact's list is empty..." />
       ) : (
