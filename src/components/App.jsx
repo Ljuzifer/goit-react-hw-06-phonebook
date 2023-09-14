@@ -6,8 +6,6 @@ import { Filter } from './Filter/Filter';
 import { Message } from './Message/Message';
 import { GlobalStyle, Box } from './GlobalStyle';
 
-
-
 export const App = () => {
   const contacts = useSelector(getContacts);
   const contactsLength = contacts.length;
