@@ -26,7 +26,6 @@ export const ContactForm = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(getContacts);
   const onAddContact = newContact => {
-    // newContact.preventDefault();
     const enteredName = newContact.name;
 
     if (
@@ -39,7 +38,6 @@ export const ContactForm = () => {
     }
 
     dispatch(addContact(newContact));
-    // setContacts(prev => [...prev, newContact]);
   };
 
   return (
