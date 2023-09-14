@@ -10,6 +10,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: url('https://bogatyr.club/uploads/posts/2023-03/1679420906_bogatyr-club-p-biblioteka-oboi-foni-pinterest-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 code {
@@ -45,7 +50,7 @@ export const Box = styled.div`
   height: 100%;
   border: 4px outset #000;
   border-radius: 13px;
-  background-color: lightslategray;
+  background-color: rgba(119, 136, 153, 0.8);
   text-align: center;
 
   h1,
