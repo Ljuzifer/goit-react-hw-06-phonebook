@@ -43,7 +43,7 @@ export const Box = styled.div`
   padding: 40px;
   width: 666px;
   height: 100%;
-  border: 4px solid #000;
+  border: 4px outset #000;
   border-radius: 13px;
   background-color: lightslategray;
   text-align: center;
@@ -51,7 +51,7 @@ export const Box = styled.div`
   h1,
   h2 {
     color: midnightblue;
-    border: 2px solid midnightblue;
+    border: 2px outset midnightblue;
     background-color: lightgoldenrodyellow;
     max-width: max-content;
     border-radius: 8px;

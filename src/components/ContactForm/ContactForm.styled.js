@@ -5,10 +5,10 @@ export const FormThumb = styled(Form)`
   display: flex;
   flex-direction: column;
   gap: 13px;
-  /* justify-content: space-between; */
+  background-color: rgba(202, 202, 202, 0.8);
   width: 400px;
   margin: auto;
-  border: 4px solid black;
+  border: 4px inset black;
   border-radius: 13px;
   padding: 20px 28px;
   margin-bottom: 28px;
