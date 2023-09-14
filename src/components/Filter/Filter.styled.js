@@ -8,6 +8,7 @@ export const Search = styled.div`
     padding: 2px 13px;
     border-radius: 13px;
     text-align: center;
+    outline: none;
   }
 
   ::placeholder {

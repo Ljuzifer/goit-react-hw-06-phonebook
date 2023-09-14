@@ -46,6 +46,8 @@ export const FormThumb = styled(Form)`
       width: 100%;
       padding: 2px 13px;
       border-radius: 13px;
+      outline: none;
+      /* background-color: rgba(255, 255, 255, 0); */
     }
   }
 `;
