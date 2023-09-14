@@ -14,8 +14,17 @@ body {
   background-image: url('https://bogatyr.club/uploads/posts/2023-03/1679420906_bogatyr-club-p-biblioteka-oboi-foni-pinterest-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
 
+  &::-webkit-scrollbar {
+    appearance: none;
+    background: transparent;
+    width: 0;
+    /* height: 0; */
+  }
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -44,6 +53,7 @@ button {
 `;
 
 export const Box = styled.div`
+  /* position: absolute; */
   margin: 22px auto;
   padding: 40px;
   width: 666px;
