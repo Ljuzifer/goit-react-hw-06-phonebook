@@ -65,7 +65,7 @@ export const Box = styled.div`
   h1,
   h2 {
     color: midnightblue;
-    border: 2px outset midnightblue;
+    border: 4px outset midnightblue;
     background-color: lightgoldenrodyellow;
     max-width: max-content;
     border-radius: 8px;

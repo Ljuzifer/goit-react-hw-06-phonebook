@@ -2,7 +2,6 @@ import { Formik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
-// import { addContact } from 'redux/actions';
 import { getContacts } from 'redux/selectors';
 import { addContact } from 'redux/contactsSlice';
 import { FormThumb } from './ContactForm.styled';
@@ -25,20 +24,10 @@ const formSchema = Yup.object().shape({
 export const ContactForm = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(getContacts);
-  const onAddContact = newContact => {
-    const enteredName = newContact.name;
 
-    if (
-      contacts.some(
-        contact => contact.name.toLowerCase() === enteredName.toLowerCase()
-      )
-    ) {
-      alert(`${enteredName} is already in contacts.`);
-      return;
-    }
-
-    dispatch(addContact(newContact));
-  };
+  // const onAddContact = newContact => {
+  //   dispatch(addContact(newContact));
+  // };
 
   return (
     <Formik
@@ -48,7 +37,18 @@ export const ContactForm = () => {
       }}
       validationSchema={formSchema}
       onSubmit={(values, actions) => {
-        onAddContact({ id: nanoid(), ...values });
+        const enteredName = values.name;
+
+        if (
+          contacts.some(
+            contact => contact.name.toLowerCase() === enteredName.toLowerCase()
+          )
+        ) {
+          alert(`${enteredName} is already in contacts.`);
+          return;
+        }
+        dispatch(addContact({ id: nanoid(), ...values }));
+        // onAddContact({ id: nanoid(), ...values });
         actions.resetForm();
       }}
     >
