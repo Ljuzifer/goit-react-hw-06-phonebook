@@ -11,7 +11,13 @@ export const List = styled.ul`
 
   li {
     display: flex;
+    justify-content: center;
+    align-items: center;
     color: black;
+    border: 2px outset darkgrey;
+    padding: 2px;
+    padding-left: 8px;
+    border-radius: 18px;
 
     span {
       font-size: 18px;
@@ -21,8 +27,15 @@ export const List = styled.ul`
         'Lucida Sans', Arial, sans-serif;
       margin-right: auto;
     }
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+
     div span {
       color: whitesmoke;
+      /* padding: 2px; */
     }
 
     button {

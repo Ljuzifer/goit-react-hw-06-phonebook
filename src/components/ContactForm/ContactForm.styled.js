@@ -8,7 +8,7 @@ export const FormThumb = styled(Form)`
   background-color: rgba(202, 202, 202, 0.8);
   width: 480px;
   margin: auto;
-  border: 4px inset buttonborder;
+  border: 2px outset black;
   border-radius: 13px;
   padding: 20px 28px;
   margin-bottom: 28px;
