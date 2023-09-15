@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const List = styled.ul`
-  width: 555px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   gap: 13px;
@@ -34,6 +34,11 @@ export const List = styled.ul`
       color: white;
       background-color: black;
       border-radius: 13px;
+
+      &:hover {
+        background-color: transparent;
+        color: buttonborder;
+      }
     }
   }
 `;

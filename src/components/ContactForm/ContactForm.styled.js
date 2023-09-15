@@ -6,9 +6,9 @@ export const FormThumb = styled(Form)`
   flex-direction: column;
   gap: 13px;
   background-color: rgba(202, 202, 202, 0.8);
-  width: 400px;
+  width: 480px;
   margin: auto;
-  border: 4px inset black;
+  border: 4px inset buttonborder;
   border-radius: 13px;
   padding: 20px 28px;
   margin-bottom: 28px;
@@ -19,7 +19,7 @@ export const FormThumb = styled(Form)`
     padding: 4px 8px;
     border-radius: 22px;
     text-transform: uppercase;
-    background-color: antiquewhite;
+    background-color: rgba(144, 144, 144, 0.8);
   }
 
   button:hover,
@@ -47,6 +47,7 @@ export const FormThumb = styled(Form)`
       padding: 2px 13px;
       border-radius: 13px;
       outline: none;
+      text-align: center;
       /* background-color: rgba(255, 255, 255, 0); */
     }
   }

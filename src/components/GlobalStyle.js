@@ -48,7 +48,6 @@ ul {
 
 button {
   cursor: pointer;
-
 }
 `;
 
@@ -56,7 +55,7 @@ export const Box = styled.div`
   /* position: absolute; */
   margin: 22px auto;
   padding: 40px;
-  width: 666px;
+  width: 780px;
   height: 100%;
   border: 4px outset #000;
   border-radius: 13px;
