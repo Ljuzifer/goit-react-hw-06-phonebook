@@ -14,10 +14,13 @@ export const FormThumb = styled(Form)`
   margin-bottom: 28px;
 
   transform: scale(0.5);
-  transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.3;
+  transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     transform: scale(1);
+    opacity: 1;
   }
 
   button {

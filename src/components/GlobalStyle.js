@@ -72,6 +72,16 @@ export const Box = styled.div`
   border-radius: 13px;
   background-color: rgba(119, 136, 153, 0.8);
   text-align: center;
+  /* animation: start 2s;
+
+  @keyframes start {
+    from {
+      height: 0;
+    }
+    to {
+      height: fit-content;
+    }
+  } */
 
   h1,
   h2 {
