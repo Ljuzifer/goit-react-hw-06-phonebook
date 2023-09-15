@@ -47,10 +47,12 @@ export const List = styled.ul`
       color: white;
       background-color: black;
       border-radius: 13px;
+      transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover {
         background-color: transparent;
         color: buttonborder;
+        transform: scale(1.2);
       }
     }
   }

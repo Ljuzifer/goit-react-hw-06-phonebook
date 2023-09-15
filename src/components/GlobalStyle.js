@@ -17,12 +17,24 @@ body {
   background-attachment: fixed;
   overflow-x: hidden;
 
+  scroll-behavior: smooth;
+  transition: 2500ms;
+
   &::-webkit-scrollbar {
     appearance: none;
     background: transparent;
     width: 0;
     /* height: 0; */
   }
+
+  /* .main{
+      transform: scale(0.2);
+      transition: transform 800 ease-in-out;
+
+      &:hover{
+        transform: scale(1.2);
+      }
+  } */
 }
 
 
@@ -52,11 +64,10 @@ button {
 `;
 
 export const Box = styled.div`
-  /* position: absolute; */
   margin: 22px auto;
   padding: 40px;
   width: 780px;
-  height: 100%;
+  height: fit-content;
   border: 4px outset #000;
   border-radius: 13px;
   background-color: rgba(119, 136, 153, 0.8);
